@@ -16,10 +16,10 @@ const cliente = "CLIENTE-001"; // nome, pedido, email, etc
 const token = jwt.sign(
   { cliente },
   SECRET,
-  { expiresIn: "7d" } // validade do acesso
+  { expiresIn: "365d" } // validade do acesso
 );
 
 console.log("\n✅ TOKEN GERADO:\n");
 console.log(token);
 console.log("\n🔗 LINK DE ACESSO:\n");
-console.log(`https://SEU-DOMINIO.vercel.app/?token=${token}\n`);
+console.log(`https://gerador-contrato-three.vercel.app/?token=${token}\n`);
